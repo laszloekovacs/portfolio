@@ -12,11 +12,10 @@ RUN npm install && npm run build
 
 
 # create a new image for arm64
-FROM --platform=linux/arm64 nginx:alpine-latest
-
+# FROM --platform=linux/arm64 nginx:alpine:latest
+FROM nginx:alpine3.18
 # copy files from build image
 COPY --from=builder /build/dist /usr/share/nginx/html
 
 # expose port 80
 EXPOSE 80
-
