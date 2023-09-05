@@ -1,12 +1,13 @@
-import Header from './Header'
-import Profile from './Profile'
+import HeroText from './HeroText'
+import Socials from './Socials'
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Profile />
-      <h1 className="text-amber-600">hello</h1>
+    <div id="container" className="flex flex-col p-5 bg-slate-300 min-h-screen">
+      <section className="bg-slate-200 min-h-screen">
+        <Socials />
+        <HeroText />
+      </section>
     </div>
   )
 }
