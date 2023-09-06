@@ -1,0 +1,14 @@
+{
+  "techList": [
+    "Javasctipt",
+    "typesctipt",
+    "Next.js",
+    "React",
+    "Redux",
+    "GraphQL",
+    "Prisma",
+    "Styled-Components",
+    "Tailwind-CSS",
+    "SWR"
+  ]
+}

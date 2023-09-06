@@ -1,13 +1,15 @@
+import Actions from './Actions'
 import HeroText from './HeroText'
 import Socials from './Socials'
+import TechStack from './TechStack'
 
 const App = () => {
   return (
-    <div id="container" className="flex flex-col p-5 bg-slate-300 min-h-screen">
-      <section className="bg-slate-200 min-h-screen">
-        <Socials />
-        <HeroText />
-      </section>
+    <div className="p-5 bg-slate-300 min-h-screen">
+      <Socials />
+      <HeroText />
+      <Actions />
+      <TechStack />
     </div>
   )
 }
