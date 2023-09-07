@@ -10,6 +10,7 @@ export default {
         'theme-dark': '#333333',
         'theme-bg': '#AAAAAA',
         'theme-hover': '#4F4F4F',
+        'theme-highlight': '#F2994A',
       },
     },
   },

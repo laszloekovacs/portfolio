@@ -9,7 +9,7 @@ export const contentURI = () => {
 }
 
 const access =
-  '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'
+  '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'
 
 export const fetcher = async (url: string) => {
   const res = await fetch(url, {
@@ -25,23 +25,17 @@ export const fetcher = async (url: string) => {
   return data
 }
 
-export type Project = {
-  name: string
-  url: string
-  source: string
-  desc: string
-  tags: string[]
-}
-
 export type Content = {
   techStack: string[]
-  projects: Project[]
+  projects: string[]
 }
 
-export function useGithub(repoName: string) {
+export function useGithub<T>(repoName: string) {
   const url = `https://api.github.com/repos/laszloekovacs/${repoName}`
 
-  const { data, error, isLoading } = useSWR(url, fetcher)
+  const { data, error, isLoading } = useSWR<T>(url, fetcher, {
+    shouldRetryOnError: false,
+  })
 
-  return { data, error, isLoading }
+  return { data, error, isLoading } as const
 }

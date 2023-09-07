@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import { Content, Project, contentURI, fetcher } from './content'
+import { Content, contentURI, fetcher } from './content'
 import ProjectItem from './ProjectItem'
 
 const Projects = () => {
@@ -10,12 +10,12 @@ const Projects = () => {
 
   return (
     <div className="page">
-      <h3>Recent Projects</h3>
+      <h3>Projects worth mentioning</h3>
 
       <ul>
         {data &&
-          data.projects.map((project: Project) => (
-            <ProjectItem key={project.url} {...project} />
+          data.projects.map((project: string) => (
+            <ProjectItem key={project} repo={project} />
           ))}
       </ul>
     </div>

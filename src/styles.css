@@ -5,6 +5,7 @@
 @layer base {
   * {
     @apply text-neutral-200;
+    user-select: none;
   }
 
   body {

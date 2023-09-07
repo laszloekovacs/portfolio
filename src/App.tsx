@@ -3,7 +3,6 @@ import HeroText from './HeroText'
 import Socials from './Socials'
 import TechStack from './TechStack'
 import Projects from './Projects'
-import Inspect from './Inspect'
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
       <TechStack />
       <Projects />
       <Footer />
-      <Inspect />
     </div>
   )
 }
