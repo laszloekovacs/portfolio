@@ -38,7 +38,11 @@
   }
 
   .panel {
-    @apply bg-zinc-700 rounded-md shadow-md p-4;
+    @apply bg-neutral-500 bg-opacity-20 rounded-sm shadow-md p-4;
+  }
+
+  .panel + .panel {
+    @apply my-4;
   }
 
   .page {

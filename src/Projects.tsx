@@ -1,16 +1,16 @@
 import useSWR from 'swr'
-import { Content, Project, contentUrl, fetcher } from './content'
+import { Content, Project, contentURI, fetcher } from './content'
 import ProjectItem from './ProjectItem'
 
 const Projects = () => {
-  const { data, error, isLoading } = useSWR<Content>(contentUrl, fetcher)
+  const { data, error, isLoading } = useSWR<Content>(contentURI, fetcher)
 
   if (isLoading) return <p>Loading...</p>
   if (error) return <p>Failed to load content</p>
 
   return (
     <div className="page">
-      <h2>Recent Projects</h2>
+      <h3>Recent Projects</h3>
 
       <ul>
         {data &&

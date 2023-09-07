@@ -19,14 +19,14 @@
       "url": "https://laszloekovacs.github.io/panaedit/",
       "source": "https://github.com/laszloekovacs/panaedit",
       "desc": "Visual panellum.js config file editor with navigation between scenes",
-      "tags": [
-        "Typescript",
-        "React",
-        "Redux",
-        "Tailwind-CSS",
-        "Panellum.js",
-        "Vite"
-      ]
+      "tags": ["Typescript", "React", "Redux", "Tailwind-CSS", "Panellum.js"]
+    },
+    {
+      "name": "Portfolio site",
+      "url": "https://laszloekovacs.github.io/portfolio/",
+      "source": "https://github.com/laszloekovacs/portfolio",
+      "desc": "Personal portfolio site",
+      "tags": ["Typescript", "React", "SWR", "Tailwind-CSS"]
     }
   ]
 }

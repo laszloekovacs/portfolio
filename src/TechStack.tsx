@@ -1,11 +1,11 @@
 import useSWR from 'swr'
-import { Content, contentUrl, fetcher } from './content'
+import { Content, contentURI, fetcher } from './content'
 
 const TechStack = () => {
-  const { data, error, isLoading } = useSWR<Content>(contentUrl, fetcher)
+  const { data, error, isLoading } = useSWR<Content>(contentURI, fetcher)
 
   return (
-    <div className="page">
+    <div className="page min-h-[30vh]">
       <h3>Some of the technology I'm using in my projects</h3>
 
       {isLoading && <p>Loading...</p>}
