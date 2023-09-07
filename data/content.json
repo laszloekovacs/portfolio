@@ -13,5 +13,12 @@
     "Auth0",
     "Docker"
   ],
-  "projects": ["portfolio", "panaedit", "cipogyar_build"]
+  "projects": [
+    {
+      "description": "Visual editor for pannellum.js config files",
+      "homepage": "https://laszloekovacs.github.io/panaedit/",
+      "githubURI": "https://github.com/laszloekovacs/panaedit",
+      "tags": ["redux", "react", "typescript"]
+    }
+  ]
 }

@@ -8,15 +8,8 @@ export const contentURI = () => {
   }
 }
 
-const access =
-  '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'
-
 export const fetcher = async (url: string) => {
-  const res = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${access}`,
-    },
-  })
+  const res = await fetch(url)
 
   if (!res.ok) {
     throw new Error('Error fetching content')
@@ -25,17 +18,15 @@ export const fetcher = async (url: string) => {
   return data
 }
 
-export type Content = {
-  techStack: string[]
-  projects: string[]
+export type Project = {
+  name: string
+  description: string
+  homepage: string
+  githubURI: string
+  tags: string[]
 }
 
-export function useGithub<T>(repoName: string) {
-  const url = `https://api.github.com/repos/laszloekovacs/${repoName}`
-
-  const { data, error, isLoading } = useSWR<T>(url, fetcher, {
-    shouldRetryOnError: false,
-  })
-
-  return { data, error, isLoading } as const
+export type Content = {
+  techStack: string[]
+  projects: Project[]
 }
