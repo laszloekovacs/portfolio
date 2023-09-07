@@ -41,6 +41,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
+      - name: inject env
+        run: |
+          echo "VITE_TOKEN=$VITE_TOKEN" >> .env
+        env:
+          VITE_TOKEN: ${{ secrets.VITE_TOKEN }}
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

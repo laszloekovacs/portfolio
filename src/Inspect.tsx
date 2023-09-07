@@ -1,24 +1,9 @@
-import { useGithub } from './content'
+import React from 'react'
 
 const Inspect = () => {
-  const { data, isLoading, error } = useGithub('portfolio')
+  console.log(import.meta.env)
 
-  if (isLoading) {
-    return <div>Loading...</div>
-  }
-
-  if (error) {
-    return <div>Error: {error.message}</div>
-  }
-
-  if (data) {
-    return (
-      <div>
-        <pre>{JSON.stringify(data, null, 2)}</pre>
-        <pre>{JSON.stringify(window.location)}</pre>
-      </div>
-    )
-  }
+  return null
 }
 
 export default Inspect
