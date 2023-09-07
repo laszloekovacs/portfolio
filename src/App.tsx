@@ -5,11 +5,13 @@ import TechStack from './TechStack'
 
 const App = () => {
   return (
-    <div className="p-5 bg-slate-300 min-h-screen">
-      <Socials />
-      <HeroText />
-      <Actions />
-      <TechStack />
+    <div className="bg-slate-300">
+      <div className="p-5 bg-slate-300 min-h-screen lg:w-[1024px] mx-auto">
+        <Socials />
+        <HeroText />
+        <Actions />
+        <TechStack />
+      </div>
     </div>
   )
 }
