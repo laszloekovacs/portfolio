@@ -1,7 +1,7 @@
 {
   "techStack": [
     "Javasctipt",
-    "typesctipt",
+    "Typesctipt",
     "Next.js",
     "React",
     "Redux",
@@ -10,7 +10,7 @@
     "Styled-Components",
     "Tailwind-CSS",
     "SWR",
-    "auth0",
+    "Auth0",
     "Docker"
   ],
   "projects": [
@@ -24,8 +24,8 @@
         "React",
         "Redux",
         "Tailwind-CSS",
-        "panellum.js",
-        "vite"
+        "Panellum.js",
+        "Vite"
       ]
     }
   ]

@@ -10,12 +10,7 @@ const socials = {
 const Socials = () => {
   return (
     <div className="flex flex-row justify-end gap-4 pb-8">
-      <a
-        href={socials.github}
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-green-700"
-      >
+      <a href={socials.github} target="_blank" rel="noreferrer">
         <FaGithubAlt size="1.5rem" color="222" />
       </a>
       <a href={socials.facebook} target="_blank" rel="noreferrer">
