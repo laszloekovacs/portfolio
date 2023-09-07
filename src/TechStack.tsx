@@ -14,9 +14,9 @@ const TechStack = () => {
       {isLoading && <p>Loading...</p>}
       {error && <p>Failed to load content</p>}
 
-      <ul>
+      <ul className="flex flex-row flex-wrap text-xl gap-4">
         {data &&
-          data.techStack.map((tech: any) => <li key={tech.id}>{tech.name}</li>)}
+          data.techStack.map((tech: string) => <li key={tech}>{tech}</li>)}
       </ul>
     </div>
   )

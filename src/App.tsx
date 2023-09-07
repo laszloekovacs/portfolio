@@ -2,6 +2,7 @@ import Actions from './Actions'
 import HeroText from './HeroText'
 import Socials from './Socials'
 import TechStack from './TechStack'
+import Projects from './projects'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <HeroText />
         <Actions />
         <TechStack />
+        <Projects />
       </div>
     </div>
   )

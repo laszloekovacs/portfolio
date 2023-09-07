@@ -9,6 +9,9 @@
     "Prisma",
     "Styled-Components",
     "Tailwind-CSS",
-    "SWR"
-  ]
+    "SWR",
+    "auth0",
+    "Docker"
+  ],
+  "projects": {}
 }
