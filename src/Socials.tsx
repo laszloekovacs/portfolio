@@ -9,7 +9,7 @@ const socials = {
 // social media links
 const Socials = () => {
   return (
-    <div className="flex flex-row justify-end gap-4 pb-8">
+    <div className="flex flex-row justify-end gap-4">
       <a href={socials.github} target="_blank" rel="noreferrer">
         <FaGithubAlt size="1.5rem" color="222" />
       </a>

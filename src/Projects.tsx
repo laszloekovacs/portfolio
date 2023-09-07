@@ -9,8 +9,8 @@ const Projects = () => {
   if (error) return <p>Failed to load content</p>
 
   return (
-    <div>
-      <h2>Here are some of my projects</h2>
+    <div className="page">
+      <h2>Recent Projects</h2>
 
       <ul>
         {data &&
