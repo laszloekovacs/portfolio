@@ -1,5 +1,3 @@
-import useSWR from 'swr'
-
 export const contentURI = () => {
   if (window.location.hostname === 'localhost') {
     return 'http://localhost:3000/data/content.json'

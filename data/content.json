@@ -18,7 +18,25 @@
       "description": "Visual editor for pannellum.js config files",
       "homepage": "https://laszloekovacs.github.io/panaedit/",
       "githubURI": "https://github.com/laszloekovacs/panaedit",
-      "tags": ["redux", "react", "typescript"]
+      "tags": ["redux", "react", "typescript", "pannellum.js"]
+    },
+    {
+      "description": "Shoe factory office virtual tour",
+      "homepage": "https://laszloekovacs.github.io/cipogyar_build/?fbclid=IwAR3vIYyobRdnjUuKgiqO-ydVZyi9a6dPVCviuxPq0X7R7puF5GPi83rv7KE",
+      "githubURI": "https://github.com/laszloekovacs/martfu_virtualis_tura",
+      "tags": ["react", "pannellum.js"]
+    },
+    {
+      "description": "personal portfolio page",
+      "homepage": "https://laszloekovacs.github.io/portfolio/",
+      "githubURI": "https://github.com/laszloekovacs/portfolio",
+      "tags": ["tailwind-css", "react", "typescript"]
+    },
+    {
+      "description": "cinema staff time tracking app",
+      "homepage": "https://github.com/laszloekovacs/cine-track",
+      "githubURI": "https://github.com/laszloekovacs/cine-track",
+      "tags": ["react", "next.js", ""]
     }
   ]
 }
