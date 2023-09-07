@@ -1,5 +1,25 @@
+import useSWR from 'swr'
+import { Content, Project, contentUrl, fetcher } from './content'
+
 const Projects = () => {
-  return <div>Projects</div>
+  const { data, error, isLoading } = useSWR<Content>(contentUrl, fetcher)
+
+  if (isLoading) return <p>Loading...</p>
+  if (error) return <p>Failed to load content</p>
+
+  return (
+    <div>
+      <h2>Projects</h2>
+      <p>Here are some of my projects</p>
+
+      <ul>
+        {data &&
+          data.projects.map((project: Project) => (
+            <li key={project.name}>{project.name}</li>
+          ))}
+      </ul>
+    </div>
+  )
 }
 
 export default Projects

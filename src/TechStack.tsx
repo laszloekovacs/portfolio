@@ -1,8 +1,5 @@
 import useSWR from 'swr'
-
-const fetcher = (url: string) => fetch(url).then((res) => res.json())
-const contentUrl =
-  'https://raw.githubusercontent.com/laszloekovacs/portfolio/main/data/content.json'
+import { contentUrl, fetcher } from './content'
 
 const TechStack = () => {
   const { data, error, isLoading } = useSWR(contentUrl, fetcher)

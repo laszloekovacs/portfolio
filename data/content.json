@@ -13,5 +13,25 @@
     "auth0",
     "Docker"
   ],
-  "projects": {}
+  "projects": [
+    {
+      "name": "Virtual tour editor and projects",
+      "url": "https://www.virtualtoureditor.com/",
+      "source": "github",
+      "desc": "Virtual tour editor and projects",
+      "tags": [
+        "Javasctipt",
+        "Next.js",
+        "React",
+        "Redux",
+        "GraphQL",
+        "Prisma",
+        "Styled-Components",
+        "Tailwind-CSS",
+        "SWR",
+        "auth0",
+        "Docker"
+      ]
+    }
+  ]
 }
