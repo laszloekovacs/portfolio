@@ -1,8 +1,8 @@
 import useSWR from 'swr'
-import { contentUrl, fetcher } from './content'
+import { Content, contentUrl, fetcher } from './content'
 
 const TechStack = () => {
-  const { data, error, isLoading } = useSWR(contentUrl, fetcher)
+  const { data, error, isLoading } = useSWR<Content>(contentUrl, fetcher)
 
   return (
     <div>

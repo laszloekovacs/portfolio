@@ -15,22 +15,17 @@
   ],
   "projects": [
     {
-      "name": "Virtual tour editor and projects",
-      "url": "https://www.virtualtoureditor.com/",
-      "source": "github",
-      "desc": "Virtual tour editor and projects",
+      "name": "Panellum.js virtual tour editor",
+      "url": "https://laszloekovacs.github.io/panaedit/",
+      "source": "https://github.com/laszloekovacs/panaedit",
+      "desc": "Visual panellum.js config file editor with navigation between scenes",
       "tags": [
-        "Javasctipt",
-        "Next.js",
+        "Typescript",
         "React",
         "Redux",
-        "GraphQL",
-        "Prisma",
-        "Styled-Components",
         "Tailwind-CSS",
-        "SWR",
-        "auth0",
-        "Docker"
+        "panellum.js",
+        "vite"
       ]
     }
   ]
