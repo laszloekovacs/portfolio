@@ -17,7 +17,7 @@ const ProjectItem = ({ description, homepage, tags, githubURI }: Project) => {
 
       <div className="flex flex-row gap-2">
         <a href={githubURI} target="_blank" rel="noreferrer">
-          <p className="text-opacity-50">{githubURI}</p>
+          <p className="text-opacity-50 text-ellipsis">{githubURI}</p>
         </a>
       </div>
     </li>
