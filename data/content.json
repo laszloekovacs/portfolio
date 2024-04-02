@@ -36,7 +36,7 @@
       "description": "cinema staff time tracking app",
       "homepage": "https://github.com/laszloekovacs/cine-track",
       "githubURI": "https://github.com/laszloekovacs/cine-track",
-      "tags": ["react", "next.js", ""]
+      "tags": ["react", "next.js"]
     }
   ]
 }
